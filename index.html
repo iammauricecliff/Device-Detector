@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Detector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<style> 
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+    body {
+        background: crimson;
+        font-family: 'Quicksand', sans-serif;
+        overflow-y: hidden;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    .dcont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-weight: 400;
+    }
+
+    .card {
+        border-radius: 20px;
+        padding: 5rem 0rem;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+         <h1 class="text-center text-lead">Device Detector</h1>
+          <div class="dcont animate__animated animate__backInDown ">
+            <div class="device card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="text-center card-title">Tracked Device Details</h5>
+                  <h6 class="card-text Webengine text-center">Web Engine:<span></span></h6>
+                  <h6 class="card-text manufacturer text-center">Device Product:<span></span></h6>
+                  <h6 class="card-text os text-center">Os Name:<span></span></h6>
+                </div>
+            </div>
+          </div>
+ 
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js" integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js" integrity="sha512-eYPrm8TgYWg3aa6tvSRZjN4v0Z9Qx69q3RhfSj+Mf89QqwOMqmwSlsVqfp4N8NVAcZe/YeUhh9x/nM2CAOp6cA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="deviceDetector.js"></script>
+    </div>
+</body>
+</html>
